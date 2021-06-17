@@ -1,4 +1,7 @@
-// Class example 1
+/////////////////////
+// Class example 1 //
+/////////////////////
+
 class Shape {
   // Properties 
   constructor(height, width) {
@@ -24,7 +27,10 @@ box.width = 20;
 console.log(box.getHeight()); // 10
 console.log(box.getWidth()); // 20
 
-// Class example 2
+/////////////////////
+// Class example 2 //
+/////////////////////
+
 class Human {
   constructor(gender, name) {
     this.gender = gender;
@@ -62,10 +68,19 @@ franklin.country = "USA";
 
 console.log(franklin.getDetails())
 
+/////////////////////
+// Class example 3 //
+/////////////////////
 
-
-
-
+// refactor using ES7+
+class Shape {
+  height = height;
+  width = width;
+  
+  getHeight = () => this.height;
+  
+  getWidth = () => this.width;
+}
 
 
 
